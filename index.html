@@ -1,0 +1,178 @@
+<!-- Requirements:
+
+- Support:
+	iOS 10 - starting from iPhone 4s
+	Windows Phone 10
+	Android
+	PC: Chrome, IE, Mozila
+- Page should be responsive
+- Page surfing using the main menu should be implemented without page reload.
+- All of the actions should have appropriate animation. Feel free to choose on your own.
+- As much as possible images should be vector-based (i.e. .svg file images).
+- Grid can and should be custom
+- The first popup is initial - appears when a user visits the page for the first time. His/her choice is recorded in cookies. It shouldn't appear the second time if a choice was made.
+- The second popup appears after clicking on "Change the distributor".
+Требования:
+
+- Поддержка:
+iOS 10 - начиная с iPhone 4s
+Windows Phone 10
+Android
+ПК: Chrome, IE, Mozila
+- Страница должна быть отзывчивой
+- Навигация по страницам с использованием главного меню должен быть реализован без перезагрузки страницы.
+- Все действия должны иметь соответствующую анимацию. Не стесняйтесь выбирать самостоятельно.
+- В максимально возможной степени изображения должны быть ориентированы на вектор (то есть .svg).
+- Сетка может и должна быть обычным
+- Первое всплывающее окно является начальным - появляется, когда пользователь впервые посещает страницу. Его выбор записывается в файлы cookie. Он не должен появляться во второй раз, если был сделан выбор.
+- После нажатия кнопки «Изменить дистрибьютора» появится второе всплывающее окно. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bigchiller Company</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <selection class="navigation_all" role="navigation_all">
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="navigation_top col-md-6">
+                            <p class="navigation_text">Your distributor:</p>
+                            <i class="fas fa-map-marker-alt navigation_ikon"></i>
+                            <a class="navigation_location" href="#">london <span>change the distributor &rarr;</span></a>
+                        </div>
+                        <br>
+                        <div class="navigation_prim">
+                            <img class="logo" width="190" height="50" src="img/logo.png" alt="logo">
+                            <nav role="navigation">
+                             <ul id="bar" class="bar">
+                                <li class="menu menu-hover"><a href="#">Home</a></li>
+                                <li class="menu menu-hover"><a href="http:/#">chiller units 	&or;</a>
+                                          <ul class="submenu">
+                                            <li><a href="#">REFRIGERATED</a></li>
+                                            <li><a href="#">FREEZERS</a></li>
+                                          </ul>
+                                </li>
+                                <li class="menu menu-hover"><a class="menu_btn" href="#">HIRE A CHILLER</a></li>
+                                <li class="menu menu-hover"><a href="#">about us</a></li>
+                                <li class="menu menu-hover"><a href="#">contact</a></li>
+                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </selection>
+    <!-- Screen 1 (slider) -->
+    <section>
+        <div class="container">
+            <div class="screen1">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- slider controls -->
+                        <Ul class="slider_dots">
+                            <li class="slider_dots__item">
+                                <a href="" data-slide-index="0"></a>
+                            </li>
+                            <li class="slider_dots__item">
+                                <a href="" data-slide-index="1"></a>
+                            </li>
+                            <li class="slider_dots__item">
+                                <a href="" data-slide-index="2"></a>
+                            </li>
+                        </Ul>
+                        <div class="slider">
+                            <div><h1 class="slider_text">PORTABLE</br>REFRIGERATED</br>& FREEZER UNITS</h1><img src="img/scr1.png" alt=""></div>
+                            <img src="img/scr1.png" alt="img-screen">
+                            <img src="img/scr1.png" alt="">
+                         </div>
+                         <div class="slider_bottom">
+                            <h5 class="slider_bottom__text">For indoor or outdoor events,  weddings and parties.</h5>
+                            <a class="menu_btn" href="#">HIRE A CHILLER</a>
+                        </div>
+                <!-- 3 panel -->
+                        <div class="panel">
+                            <div class="row">
+                                <div class="col-md-4 panel_part">
+                                    <a href="#">
+                                        <h4>CELEBRATE </br> IN </br> STYLE</h4>
+                                        <i class="fas fa-beer panel_part__ikon"></i>
+                                    </br>
+                                        <p>Wine,  beer, fizzy pop... serve your drinks freshy-chilled from your own personal cellar</p>
+                                    </a>
+                                    <a class="panel_btn" href="#">reed more</a>
+                                </div>
+                                <div class="col-md-4 panel_part">
+                                    <a href="#">
+                                        <h4>A CINCH </br> FOR </br> CATERING</h4>
+                                        <i class="far fa-lemon panel_part__ikon"></i>
+                                    </br>
+                                        <p>A spacious mobile fridge,  with bags of room for your buffet</p>
+                                    </a>
+                                    <a class="panel_btn" href="#">reed more</a>
+                                </div>
+                                <div class="col-md-4 panel_part">
+                                    <a href="#">
+                                        <h4>CONVENIENT </br> COLD</h4>
+                                        <i class="fas fa-snowflake panel_part__ikon"></i>
+                                    </br>
+                                        <p>Behing your marquee,  parked in your driveway, or wherever you need some portable chill</p>
+                                    </a>
+                                    <a class="panel_btn" href="#">reed more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen1_bottom">
+                            <h5 class="screen1_bottom__text">HIRE </br> A <span>CHILLER</span> </br> TODAY!</h5>
+                            <img src="img/scr1.1.png" alt="">
+                            <a class="menu_btn" href="#">HIRE A CHILLER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <selection>
+        <div class="container">
+            <div class="row">
+                
+            </div>
+        </div>
+    </selection>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+<!--
+
+<i class="fas fa-map-marker-alt"></i>
+
+<i class="fas fa-beer"></i>
+
+<i class="far fa-lemon"></i>
+
+
+<i class="fas fa-snowflake"></i>
+
+<i class="far fa-quote-right"></i>
+
+<i class="far fa-comment"></i>
+
+
+ -->
