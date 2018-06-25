@@ -70,9 +70,6 @@ h5 {
 ul li {
   list-style: none;
 }
-.screen1 {
-    background-color: #F4F4F4;
-}
 
 /* window */
 #wrap{
@@ -149,10 +146,15 @@ ul li {
     margin: 20px;
     padding: 5px 90px;
 }
+
+
 /* navigation */
 /* top */
+.navigation_top__distr {
+    background-color: rgb(0, 0, 0);
+}
 .navigation_text {
-    margin: 15px 0px 0px 0px;
+    margin: 15px 0px 0px 10px;
     float: left;
 }
 .navigation_ikon {
@@ -177,9 +179,12 @@ ul li {
     color: rgb(0, 159, 188);
 }
 
+
+.header {
+    background-color: rgb(245, 245, 245);
+}
 /* navigation_prim */
 .navigation_prim {
-    background-color: rgb(245, 245, 245);
     height: 80px;
 }
 .logo {
@@ -206,7 +211,7 @@ ul li {
   font-family: sans-serif;
   font-weight: bold;
   margin-right: 0;
-  padding: 15px 10px;
+  padding: 15px  10px;
   -webkit-transition: all 0.25s;
 }
 .menu .submenu {
@@ -307,7 +312,7 @@ ul li {
 .slider_dots {
     position: absolute;
     z-index: 1;
-    margin: 10px 1030px;
+    margin: 10px 90%;
         -moz-transform: rotate(-90deg); /* Для Firefox */
         -ms-transform: rotate(-90deg); /* Для IE */
         -webkit-transform: rotate(-90deg); /* Для Safari, Chrome, iOS */
@@ -330,7 +335,7 @@ ul li {
 }
 .slider_text {
     position: absolute;
-    margin: 235px 100px 100px 15px;
+    margin: 320px 100px 100px 15px;
 }
 .bx-wrapper { /* Class to wrap the slider in. Change to prevent from using default bxSlider styles */
     margin-bottom: 0px;
@@ -388,7 +393,7 @@ margin: 0px 15px;
 }
 .panel_btn {
     position: absolute;
-    margin: 175px 0px 0px 65px;
+    margin: 175px 0px 0px 30%;
     float: right;
     border-radius: 20px;
     padding: 10px;
@@ -420,7 +425,7 @@ margin: 0px 15px;
 
 /* opinions part */
 .opinions_text {
-    margin: 15px;
+    margin: 15px 0px;
 }
 .opinions_block:first-child {
     background-image: url('../img/comm1.png');
@@ -459,6 +464,9 @@ margin: 0px 15px;
 
 
 
+
+
+
 /* about company */
 .about_block {
     margin-top: 150px;
@@ -486,18 +494,18 @@ margin: 0px 15px;
     margin: 10px;
 }
 .about_block__item a:first-child {
-    margin-left: 40px;
+    margin-left: 100px;
 }
 .about_block__item2 {
-    margin: 40px 0px 0px 595px;
+    margin: 40px 0px 0px 660px;
     font-size: 18px;
 }
 .about_block__item3 {
-    margin: 50px 0px 0px 595px;
+    margin: 50px 0px 0px 660px;
 }
 .about_block__btn {
     position: absolute;
-    margin: 45px 0px 0px 40px;
+    margin: 70px 0px 0px 110px;
     float: right;
     border-radius: 20px;
     padding: 10px 15px;
@@ -512,7 +520,7 @@ margin: 0px 15px;
 }
 .chat_btn {
     position: absolute;
-    margin: -30px 0px 0px 1030px;
+    margin: -30px 0px 0px 90%;
     float: right;
     border-radius: 20px;
     padding: 10px 15px;
@@ -525,6 +533,8 @@ margin: 0px 15px;
     text-decoration: none;
     background: #000
     -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
 }
 .chat_btn__coment {
     border-radius: 50%;
@@ -532,12 +542,15 @@ margin: 0px 15px;
     font-size: 20px;
     color: rgb(0, 159, 188);
     background: #fff;
-    margin: 20px 0px 0px 1060px;
+    margin: 20px 0px 0px 90%;
 }
 .chat_btn__coment:hover {
     background: #63d7c4
     -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
 }
+
+
+
 
 
 /* order part */
@@ -554,10 +567,10 @@ margin: 0px 15px;
 }
 .order_banner__text {
     position: absolute;
-    margin: 350px 100px 100px 15px;
+    margin: 360px 100px 100px 15px;
 }
 .order_banner__text:last-child {
-    margin: 360px 100px 100px 930px;
+    margin: 367px 100px 100px 1050px;
 }
 .order_bottom {
     margin: 25px 15px;
@@ -567,10 +580,12 @@ margin: 0px 15px;
 }
 .order_bottom p {
     font-weight: bold;
-    float: right;
     padding: 10px;
-    margin-left: 450px;
+    margin-left: 790px;
 }
+
+
+
 
 
 
@@ -602,7 +617,7 @@ margin: 0px 15px;
     float: left;
     padding: 10px;
     color: rgb(170, 170, 170);
-    margin-left: 200px;
+    margin-left: 350px;
 }
 .footer_item__menu {
     display: inline;

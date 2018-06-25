@@ -1,7 +1,6 @@
     // slider custom
 $('.slider').bxSlider({
     controls : false,
-    slideWidth: 1270,
     pagerCustom : '.slider_dots'
 });
 $('.slider2').bxSlider({
